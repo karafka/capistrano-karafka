@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.version     = Capistrano::Karafka::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
-  spec.email       = %w[ maciej@coditsu.io ]
+  spec.email       = %w[maciej@coditsu.io]
   spec.homepage    = 'https://github.com/karafka/capistrano-karafka'
   spec.summary     = 'Karafka integration for Capistrano'
   spec.description = 'Karafka integration for Capistrano'
@@ -23,9 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.require_paths = %w( lib )
-  spec.post_install_message = %q(
-    All plugins need to be explicitly installed with install_plugin.
-    Please see README.md
-  )
+  spec.require_paths = %w[lib]
 end

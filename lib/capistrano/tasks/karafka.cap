@@ -5,7 +5,7 @@
 namespace :karafka do
   desc 'Stop Karafka'
   task :stop do
-    on roles(fetch(:karafka_role)) do |host|
+    on roles(fetch(:karafka_role)) do |_host|
       within shared_path do
         # If there's no pidfile it means that Karafka is not running
         next unless test "cat #{fetch(:karafka_pid)}"
@@ -17,7 +17,7 @@ namespace :karafka do
         # the previous one is stopped. That way we won't have problems with Kafka registering and
         # deregistering processes from topics (although nothing bad would happen. It would just
         # take more time to rebalance)
-        while true
+        loop do
           break unless test "cat #{fetch(:karafka_pid)}"
           info 'Waiting for Karafka to stop'
           sleep 5
@@ -28,7 +28,7 @@ namespace :karafka do
 
   desc 'Start Karafka'
   task :start do
-    on roles(fetch(:karafka_role)) do |host|
+    on roles(fetch(:karafka_role)) do |_host|
       within current_path do
         # We use all 3 because when combined with Sinatra/Rails it will use their parts as well
         # so we want to set proper env for any of them
@@ -51,17 +51,17 @@ namespace :karafka do
 
   desc 'Status Karafka'
   task :status do
-    on roles(fetch(:karafka_role)) do |host|
+    on roles(fetch(:karafka_role)) do |_host|
       if test "cat #{fetch(:karafka_pid)}"
         pid = capture "cat #{fetch(:karafka_pid)}"
 
         if test "ps -p #{pid} > /dev/null"
           info "Karafka is started: #{pid}"
         else
-          error "Karafka is not started but pidfile exists"
+          error 'Karafka is not started but pidfile exists'
         end
       else
-        info "Karafka is not started"
+        info 'Karafka is not started'
       end
     end
   end
