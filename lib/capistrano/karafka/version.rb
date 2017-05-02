@@ -2,6 +2,7 @@
 
 module Capistrano
   class Karafka
-    VERSION = '0.1.0'
+    # Current capistrano integration gem version
+    VERSION = '1.0.0'
   end
 end

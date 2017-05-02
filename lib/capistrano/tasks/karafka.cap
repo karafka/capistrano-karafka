@@ -36,7 +36,7 @@ namespace :karafka do
           KARAFKA_ENV: fetch(:karafka_env),
           RAILS_ENV: fetch(:rails_env),
           RACK_ENV: fetch(:rack_env)
-        )do
+        ) do
           execute :bundle, "exec karafka server -d -p #{fetch(:karafka_pid)}"
         end
       end
