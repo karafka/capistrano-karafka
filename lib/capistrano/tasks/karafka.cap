@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @note Inspired by Puma capistrano handlers
 # @see https://github.com/seuros/capistrano-puma/blob/master/lib/capistrano/tasks/puma.rake
 namespace :karafka do

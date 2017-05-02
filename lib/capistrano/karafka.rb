@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'capistrano/bundler'
-require "capistrano/plugin"
+require 'capistrano/plugin'
 
 module Capistrano
   class Karafka < Capistrano::Plugin
