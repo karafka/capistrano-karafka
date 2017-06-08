@@ -7,13 +7,14 @@ require 'capistrano/plugin'
 module Capistrano
   # Karafka Capistrano integration
   class Karafka < Capistrano::Plugin
+    # Names of files that store capistrano procedures
     CAP_FILES = %w[
       karafka
       karafka/start
       karafka/stop
       karafka/restart
       karafka/status
-    ]
+    ].freeze
 
     # Defines all the capistrano tasks by taking them from the rake cap file
     def define_tasks
