@@ -7,9 +7,19 @@ require 'capistrano/plugin'
 module Capistrano
   # Karafka Capistrano integration
   class Karafka < Capistrano::Plugin
+    CAP_FILES = %w[
+      karafka
+      karafka/start
+      karafka/stop
+      karafka/restart
+      karafka/status
+    ]
+
     # Defines all the capistrano tasks by taking them from the rake cap file
     def define_tasks
-      eval_rakefile File.expand_path('../tasks/karafka.cap', __FILE__)
+      CAP_FILES.each do |cap_file|
+        eval_rakefile File.expand_path("../tasks/#{cap_file}.cap", __FILE__)
+      end
     end
 
     # Default values for Karafka settings

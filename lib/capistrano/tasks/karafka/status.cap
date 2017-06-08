@@ -1,0 +1,20 @@
+# frozen_string_literal: true
+
+namespace :karafka do
+  desc 'Status Karafka'
+  task :status do
+    on roles(fetch(:karafka_role)) do |_host|
+      if test "cat #{fetch(:karafka_pid)}"
+        pid = capture "cat #{fetch(:karafka_pid)}"
+
+        if test "ps -p #{pid} > /dev/null"
+          info "Karafka is started: #{pid}"
+        else
+          error 'Karafka is not started but pidfile exists'
+        end
+      else
+        info 'Karafka is not started'
+      end
+    end
+  end
+end

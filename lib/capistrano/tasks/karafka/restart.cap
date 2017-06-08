@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+namespace :karafka do
+  desc 'Restart Karafka'
+  task :restart do
+    invoke 'karafka:stop'
+    invoke 'karafka:start'
+  end
+end

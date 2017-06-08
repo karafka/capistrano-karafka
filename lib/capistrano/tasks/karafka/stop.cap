@@ -1,0 +1,26 @@
+# frozen_string_literal: true
+
+namespace :karafka do
+  desc 'Stop Karafka'
+  task :stop do
+    on roles(fetch(:karafka_role)) do |_host|
+      within shared_path do
+        # If there's no pidfile it means that Karafka is not running
+        next unless test "cat #{fetch(:karafka_pid)}"
+
+        # Send a kill signal to a given process
+        execute "kill -INT `cat #{fetch(:karafka_pid)}`"
+
+        # And wait until it finishes. We wait because we don't want to start next process until
+        # the previous one is stopped. That way we won't have problems with Kafka registering and
+        # deregistering processes from topics (although nothing bad would happen. It would just
+        # take more time to rebalance)
+        loop do
+          break unless test "cat #{fetch(:karafka_pid)}"
+          info 'Waiting for Karafka to stop'
+          sleep 5
+        end
+      end
+    end
+  end
+end
