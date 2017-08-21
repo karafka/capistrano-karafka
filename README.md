@@ -40,7 +40,7 @@ Take a look at the [set_defaults](https://github.com/karafka/capistrano-karafka/
 set :karafka_pid, ->{ File.join(shared_path, 'tmp', 'pids', 'karafka.pid') }
 ```
 
-**Warning**: In order to make capistrano/karafka work with multiple processes, pidfile needs to end with ```.pid```.
+**Warning**: In order to make capistrano-karafka work with multiple processes, pidfile needs to end with ```.pid```.
 
 ## Multiple processes
 
