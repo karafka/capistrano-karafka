@@ -75,7 +75,7 @@ set :karafka_small_consumer_groups, %w[
 ]
 
 set :karafka_big_processes, 4
-set :karafka_small_consumer_groups, %w[
+set :karafka_small_consumer_groups, [
   'group_a group_b',
   'group_c group_d',
   'group_e',
