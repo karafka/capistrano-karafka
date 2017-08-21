@@ -26,7 +26,7 @@ namespace :karafka do
     processes_details
   end
 
-  def for_each_process(&block)
+  def for_each_process
     processes_details.each_with_index do |process_details, index|
       within release_path do
         yield(process_details, index)
