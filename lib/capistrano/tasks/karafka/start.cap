@@ -1,19 +1,34 @@
 # frozen_string_literal: true
 
 namespace :karafka do
+  # Starts Karafka process with a given set of params
+  # @param [Hash] Details of a process that we're suppose to start
+  def start_karafka(process_details)
+    pidfile = process_details[:pidfile]
+    consumer_groups = process_details[:consumer_groups]
+
+    # We use all 3 because when combined with Sinatra/Rails it will use their parts as well
+    # so we want to set proper env for any of them
+    with(
+      KARAFKA_ENV: fetch(:karafka_env),
+      RAILS_ENV: fetch(:rails_env),
+      RACK_ENV: fetch(:rack_env)
+    ) do
+      execute :bundle, [
+        'exec',
+        'karafka server',
+        '-d',
+        "-p #{pidfile}",
+        consumer_groups ? "-g #{consumer_groups}" : nil
+      ].join(' ')
+    end
+  end
+
   desc 'Start Karafka'
   task :start do
-    on roles(fetch(:karafka_role)) do |_host|
-      within current_path do
-        # We use all 3 because when combined with Sinatra/Rails it will use their parts as well
-        # so we want to set proper env for any of them
-        with(
-          KARAFKA_ENV: fetch(:karafka_env),
-          RAILS_ENV: fetch(:rails_env),
-          RACK_ENV: fetch(:rack_env)
-        ) do
-          execute :bundle, "exec karafka server -d -p #{fetch(:karafka_pid)}"
-        end
+    on roles(fetch(:karafka_role)) do
+      for_each_process do |process_details|
+        start_karafka(process_details)
       end
     end
   end
