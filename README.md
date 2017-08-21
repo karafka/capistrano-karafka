@@ -7,7 +7,7 @@ Karafka integration for Capistrano.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application Gemfile:
 
 ```ruby
   gem 'capistrano-karafka'
@@ -77,7 +77,9 @@ set :karafka_small_consumer_groups, %w[
 set :karafka_big_processes, 4
 set :karafka_small_consumer_groups, %w[
   'group_a group_b',
-  'group_c group_d'
+  'group_c group_d',
+  'group_e',
+  'group_f'
 ]
 
 server 'example-small.com', roles: %i[karafka_small]
