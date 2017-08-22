@@ -1,8 +1,39 @@
 # frozen_string_literal: true
 
-# @note Inspired by Puma capistrano handlers
+# @note Inspired by Puma capistrano handlers and Sidekiq capistrano handlers
 # @see https://github.com/seuros/capistrano-puma/blob/master/lib/capistrano/tasks/puma.rake
+# @see https://github.com/seuros/capistrano-sidekiq/blob/master/lib/capistrano/tasks/capistrano2.rb
 namespace :karafka do
+  # @return [Array<Hash>] hash with details about each of the processes that
+  #   we're suppose to manage. Contains pidfile and consumer_groups for now
+  def processes_details
+    processes_details = []
+
+    Array(fetch(:karafka_role)).each do |role|
+      next unless host.roles.include?(role)
+
+      processes = fetch(:"#{role}_processes") || fetch(:karafka_processes)
+      consumer_groups = fetch(:"#{role}_consumer_groups") || fetch(:karafka_consumer_groups)
+
+      processes.times do |index|
+        processes_details << {
+          pidfile: fetch(:karafka_pid).gsub(/\.pid$/, "-#{index}.pid"),
+          consumer_groups: consumer_groups[index]
+        }
+      end
+    end
+
+    processes_details
+  end
+
+  def for_each_process
+    processes_details.each_with_index do |process_details, index|
+      within release_path do
+        yield(process_details, index)
+      end
+    end
+  end
+
   task :add_default_hooks do
     after 'deploy:finished', 'karafka:restart'
   end

@@ -1,19 +1,27 @@
 # frozen_string_literal: true
 
 namespace :karafka do
+  # Checks a status of a given Karafka process
+  # @param pidfile [String] path to a pidfile of a process that we want to check
+  def status_karafka(pidfile)
+    if test "cat #{pidfile}"
+      process_pid = capture "cat #{pidfile}"
+
+      if test "ps -p #{process_pid} > /dev/null"
+        info "Karafka #{process_pid} is started: #{pidfile}"
+      else
+        error "Karafka is not started but pidfile exists: #{pidfile}"
+      end
+    else
+      info "Karafka is not started: #{pidfile}"
+    end
+  end
+
   desc 'Status Karafka'
   task :status do
-    on roles(fetch(:karafka_role)) do |_host|
-      if test "cat #{fetch(:karafka_pid)}"
-        pid = capture "cat #{fetch(:karafka_pid)}"
-
-        if test "ps -p #{pid} > /dev/null"
-          info "Karafka is started: #{pid}"
-        else
-          error 'Karafka is not started but pidfile exists'
-        end
-      else
-        info 'Karafka is not started'
+    on roles fetch(:karafka_role) do
+      for_each_process do |process_details|
+        status_karafka(process_details[:pidfile])
       end
     end
   end
