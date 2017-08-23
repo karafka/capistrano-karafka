@@ -20,7 +20,7 @@ namespace :karafka do
   desc 'Status Karafka'
   task :status do
     on roles fetch(:karafka_role) do
-      for_each_process do |process_details|
+      for_each_karafka_process do |process_details|
         status_karafka(process_details[:pidfile])
       end
     end

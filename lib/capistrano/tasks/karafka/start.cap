@@ -27,7 +27,7 @@ namespace :karafka do
   desc 'Start Karafka'
   task :start do
     on roles(fetch(:karafka_role)) do
-      for_each_process do |process_details|
+      for_each_karafka_process do |process_details|
         start_karafka(process_details)
       end
     end

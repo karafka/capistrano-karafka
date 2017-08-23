@@ -6,7 +6,7 @@
 namespace :karafka do
   # @return [Array<Hash>] hash with details about each of the processes that
   #   we're suppose to manage. Contains pidfile and consumer_groups for now
-  def processes_details
+  def karafka_processes_details
     processes_details = []
 
     Array(fetch(:karafka_role)).each do |role|
@@ -26,8 +26,8 @@ namespace :karafka do
     processes_details
   end
 
-  def for_each_process
-    processes_details.each_with_index do |process_details, index|
+  def for_each_karafka_process
+    karafka_processes_details.each_with_index do |process_details, index|
       within release_path do
         yield(process_details, index)
       end
