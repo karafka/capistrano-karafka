@@ -91,10 +91,7 @@ By default, capistrano-karafka will start Karafka processes without limiting con
 ## References
 
 * [Karafka framework](https://github.com/karafka/karafka)
-* [Capistrano Karafka](https://github.com/karafka/capistrano-karafka)
-* [Waterdrop](https://github.com/karafka/waterdrop)
-* [Envlogic](https://github.com/karafka/envlogic)
-* [Null Logger](https://github.com/karafka/null-logger)
+* [Capistrano Karafka Coditsu](https://app.coditsu.io/karafka/repositories/capistrano-karafka)
 
 ## Note on Patches/Pull Requests
 
