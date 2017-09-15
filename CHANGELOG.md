@@ -1,5 +1,8 @@
 # Capistrano Karafka changelog
 
+## Unreleased
+- Ruby 2.4.2 support
+
 ## 1.1.0
 - Support of Karafka 0.6+
 - Support of multiple Karafka processes execution
