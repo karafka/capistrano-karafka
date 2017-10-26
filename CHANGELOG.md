@@ -1,6 +1,6 @@
 # Capistrano Karafka changelog
 
-## Unreleased
+## 1.1.1 - Unreleased
 - Ruby 2.4.2 support
 
 ## 1.1.0

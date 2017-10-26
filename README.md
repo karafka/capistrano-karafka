@@ -105,11 +105,3 @@ Commit, do not mess with Rakefile, version, or history. (if you want to have you
 Each pull request must pass our quality requirements. To check if everything is as it should be, we use [Coditsu](https://coditsu.io) that combinse multiple linters and code analyzers for both code and documentation.
 
 Unfortunately, it does not yet support independent forks, however you should be fine by looking at what we require.
-
-Please run:
-
-```bash
-bundle exec rake
-```
-
-to check if everything is in order. After that you can submit a pull request.
