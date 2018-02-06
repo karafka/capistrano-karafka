@@ -80,7 +80,7 @@ GEM
     null-logger (0.1.4)
     rake (12.3.0)
     require_all (1.5.0)
-    ruby-kafka (0.5.2)
+    ruby-kafka (0.5.3)
     sshkit (1.16.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
