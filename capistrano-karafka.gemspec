@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license     = 'MIT'
 
   spec.add_dependency 'capistrano', '>= 3.9'
-  spec.add_dependency 'capistrano-bundler'
+  spec.add_dependency 'capistrano-bundler', '>= 1.2'
   spec.add_dependency 'karafka', '>= 1.2.0.beta4'
   spec.required_ruby_version = '>= 2.3.0'
 
