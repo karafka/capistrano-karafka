@@ -97,7 +97,7 @@ By default, capistrano-karafka will start Karafka processes without limiting con
 
 First, thank you for considering contributing to Capistrano Karafka! It's people like you that make the open source community such a great community!
 
-Each pull request must pass all the rspec specs and meet our quality requirements.
+Each pull request must pass all the RSpec specs and meet our quality requirements.
 
 To check if everything is as it should be, we use [Coditsu](https://coditsu.io) that combines multiple linters and code analyzers for both code and documentation. Once you're done with your changes, submit a pull request.
 
