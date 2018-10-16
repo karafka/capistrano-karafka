@@ -92,7 +92,7 @@ GEM
     rake (12.3.1)
     require_all (2.0.0)
     rouge (2.2.1)
-    ruby-kafka (0.7.2)
+    ruby-kafka (0.7.3)
       digest-crc
     sshkit (1.17.0)
       net-scp (>= 1.1.2)
