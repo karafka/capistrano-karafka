@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 07ccdb7c866f3709bb238cdee7e7d602967ab400
+  revision: 5845f930bb28c309b241522f7d37b31d585fe141
   branch: 1.3-wip
   specs:
     karafka (1.3.0)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/waterdrop
-  revision: e48228c831bb930f67d583dd954ca7dccf9ee6db
+  revision: 7fed76bdfad45acb6fe6fbe215c93fc1dde28731
   branch: 1.3-wip
   specs:
     waterdrop (1.3.0)
@@ -48,7 +48,7 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundler (1.3.0)
+    capistrano-bundler (1.4.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
     concurrent-ruby (1.0.5)
@@ -96,7 +96,7 @@ GEM
       dry-inflector (~> 0.1)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
-    king_konf (0.3.6)
+    king_konf (0.3.7)
     multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -105,9 +105,9 @@ GEM
     rake (12.3.1)
     require_all (2.0.0)
     rouge (2.2.1)
-    ruby-kafka (0.7.2)
+    ruby-kafka (0.7.3)
       digest-crc
-    sshkit (1.17.0)
+    sshkit (1.18.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (0.20.0)
@@ -121,4 +121,4 @@ DEPENDENCIES
   waterdrop!
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
