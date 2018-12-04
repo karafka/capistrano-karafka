@@ -110,7 +110,6 @@ GEM
       ruby-kafka (>= 0.6)
 
 PLATFORMS
-  java
   ruby
 
 DEPENDENCIES
