@@ -1,0 +1,20 @@
+services:
+  - docker
+
+dist: trusty
+sudo: false
+cache: bundler
+
+git:
+  depth: false
+
+jobs:
+  include:
+    - stage: coditsu
+      before_script:
+        - docker create -v /sources --name sources alpine:3.4 /bin/true
+        - docker cp ./ sources:/sources
+      script: docker run --volumes-from sources coditsu/build-runner:latest
+
+stages:
+  - coditsu
