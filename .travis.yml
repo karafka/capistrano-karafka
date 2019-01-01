@@ -16,7 +16,9 @@ jobs:
         - docker cp ./ sources:/sources
       script: >
         docker run
-        -e CODITSU_API_KEY CODITSU_API_SECRET CODITSU_REPOSITORY_ID
+        -e CODITSU_API_KEY
+        -e CODITSU_API_SECRET
+        -e CODITSU_REPOSITORY_ID
         --volumes-from sources
         coditsu/build-runner:latest
 
