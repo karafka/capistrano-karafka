@@ -1,3 +1,3 @@
-api_key: fe304f25104aeee1f070b1fd9cbd10f7
-api_secret: 7c5dbb71bf0f6f3d6782b7985879490f
-repository_id: df4178d8-9926-49a7-9410-4c419921d2ad
+api_key: <%= ENV['CODITSU_API_KEY'] %>
+api_secret: <%= ENV['CODITSU_API_SECRET'] %>
+repository_id: <%= ENV['CODITSU_REPOSITORY_ID'] %>

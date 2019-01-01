@@ -14,7 +14,11 @@ jobs:
       before_script:
         - docker create -v /sources --name sources alpine:3.4 /bin/true
         - docker cp ./ sources:/sources
-      script: docker run --volumes-from sources coditsu/build-runner:latest
+      script: >
+        docker run
+        -e CODITSU_API_KEY CODITSU_API_SECRET CODITSU_REPOSITORY_ID
+        --volumes-from sources
+        coditsu/build-runner:latest
 
 stages:
   - coditsu
