@@ -66,7 +66,7 @@ GEM
       dry-types (~> 0.13.1)
     envlogic (1.1.0)
       dry-inflector (~> 0.1)
-    i18n (1.5.1)
+    i18n (1.5.2)
       concurrent-ruby (~> 1.0)
     karafka (1.2.9)
       activesupport (>= 4.0)
@@ -91,7 +91,7 @@ GEM
     rake (12.3.2)
     require_all (2.0.0)
     rouge (2.2.1)
-    ruby-kafka (0.7.4)
+    ruby-kafka (0.7.5)
       digest-crc
     sshkit (1.18.0)
       net-scp (>= 1.1.2)
