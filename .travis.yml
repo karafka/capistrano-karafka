@@ -11,6 +11,7 @@ git:
 jobs:
   include:
     - stage: coditsu
+      language: script
       before_script:
         - docker create -v /sources --name sources alpine:3.4 /bin/true
         - docker cp ./ sources:/sources
