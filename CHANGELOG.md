@@ -1,5 +1,8 @@
 # Capistrano Karafka changelog
 
+## 1.3.0
+- Support for Karafka 1.3
+
 ## 1.2.0
 - Ruby 2.4.2 support
 - Ruby 2.5.0 support
