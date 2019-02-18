@@ -2,5 +2,7 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in capistrano-karafka.gemspec
 gemspec
+
+gem 'karafka', git: 'https://github.com/karafka/karafka'
+gem 'waterdrop', git: 'https://github.com/karafka/waterdrop'
