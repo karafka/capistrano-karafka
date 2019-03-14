@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/karafka/karafka
-  revision: ddf81754a3e450b103b9f8ea9cdef09721b9d35d
+  revision: a9f80097d2d3f1b293c20af37d0096b0b906c655
   specs:
     karafka (1.3.0)
       dry-configurable (~> 0.8)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/waterdrop
-  revision: a8084bc87d85da7e795b8566cf875dc2dfc612bb
+  revision: 83789048aae7b4579019d601c50e09df3031caf5
   specs:
     waterdrop (1.3.0)
       delivery_boy (~> 0.2)
@@ -47,7 +47,7 @@ GEM
       sshkit (>= 1.9.0)
     capistrano-bundler (1.5.0)
       capistrano (~> 3.1)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     delivery_boy (0.2.7)
       king_konf (~> 0.2)
       ruby-kafka (~> 0.5)
@@ -97,11 +97,11 @@ GEM
     multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (5.1.0)
+    net-ssh (5.2.0)
     null-logger (0.1.5)
     rake (12.3.2)
     require_all (2.0.0)
-    ruby-kafka (0.7.5)
+    ruby-kafka (0.7.6)
       digest-crc
     sshkit (1.18.2)
       net-scp (>= 1.1.2)
