@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/waterdrop
-  revision: e0741d152e847200eea662470082ff7003d6b1da
+  revision: ec42285de5a48c051f356bcc535c7df21e56cc5d
   specs:
     waterdrop (1.3.0)
       delivery_boy (~> 0.2)
@@ -101,7 +101,7 @@ GEM
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
     rake (12.3.2)
-    ruby-kafka (0.7.6)
+    ruby-kafka (0.7.7)
       digest-crc
     sshkit (1.18.2)
       net-scp (>= 1.1.2)
