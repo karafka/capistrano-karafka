@@ -5,6 +5,8 @@
 
 Karafka integration for Capistrano.
 
+**Note**: If you want to use Karafka framework with `systemd` and Capistrano, you don't need this gem at all. Please refer to [this](https://github.com/karafka/karafka/wiki/Deployment#systemd--capistrano) section of the Wiki.
+
 ## Installation
 
 Add this line to your application Gemfile:
