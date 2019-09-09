@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'capistrano', '>= 3.9'
   spec.add_dependency 'capistrano-bundler', '>= 1.2'
-  spec.add_dependency 'karafka', '~> 1.3.0.rc1'
+  spec.add_dependency 'karafka', '~> 1.3.0'
   spec.required_ruby_version = '>= 2.3.0'
 
   if $PROGRAM_NAME.end_with?('gem')
