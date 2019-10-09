@@ -47,7 +47,7 @@ GEM
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
       dry-events (~> 0.1)
-    dry-schema (1.4.0)
+    dry-schema (1.4.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.8, >= 0.8.3)
       dry-core (~> 0.4)
@@ -106,7 +106,7 @@ GEM
       dry-validation (~> 1.2)
       ruby-kafka (>= 0.7.8)
       zeitwerk (~> 2.1)
-    zeitwerk (2.1.10)
+    zeitwerk (2.2.0)
 
 PLATFORMS
   ruby
