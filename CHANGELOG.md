@@ -2,6 +2,7 @@
 
 ## Unreleased (master)
 - Ruby 2.6.5 support
+- Ruby 2.7.0 support
 - Drop support for Ruby < 2.5
 
 ## 1.3.0 (2019-09-09)
