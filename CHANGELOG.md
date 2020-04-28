@@ -1,9 +1,10 @@
 # Capistrano Karafka changelog
 
-## Unreleased (master)
+## 1.3.1 (2020-04-28)
 - Ruby 2.6.5 support
-- Ruby 2.7.0 support
+- Ruby 2.7.1 support
 - Drop support for Ruby < 2.5
+- Change license to LGPL-3.0
 
 ## 1.3.0 (2019-09-09)
 - Final `1.3.0` release

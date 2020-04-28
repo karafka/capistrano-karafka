@@ -5,14 +5,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'capistrano-karafka'
-  spec.version     = '1.3.0'
+  spec.version     = '1.3.1'
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
   spec.email       = %w[maciej@coditsu.io]
   spec.homepage    = 'https://github.com/karafka/capistrano-karafka'
   spec.summary     = 'Karafka integration for Capistrano'
   spec.description = 'Karafka integration for Capistrano'
-  spec.license     = 'MIT'
+  spec.license     = 'LGPL-3.0'
 
   spec.add_dependency 'capistrano', '>= 3.9'
   spec.add_dependency 'capistrano-bundler', '>= 1.2'
