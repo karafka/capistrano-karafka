@@ -1,5 +1,6 @@
 # Capistrano Karafka
 
+[![Build Status](https://github.com/karafka/capistrano-karafka/workflows/ci/badge.svg)](https://github.com/karafka/capistrano-karafka/actions?query=workflow%3Aci)
 [![Gem Version](https://badge.fury.io/rb/capistrano-karafka.svg)](http://badge.fury.io/rb/capistrano-karafka)
 [![Join the chat at https://gitter.im/karafka/karafka](https://badges.gitter.im/karafka/karafka.svg)](https://gitter.im/karafka/karafka?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -93,6 +94,7 @@ By default, capistrano-karafka will start Karafka processes without limiting con
 ## References
 
 * [Karafka framework](https://github.com/karafka/karafka)
+* [Capistrano Karafka Actions CI](https://github.com/karafka/capistrano-karafka/actions?query=workflow%3Aci)
 * [Capistrano Karafka Coditsu](https://app.coditsu.io/karafka/repositories/capistrano-karafka)
 
 ## Note on contributions
