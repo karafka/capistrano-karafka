@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version     = '1.3.1'
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
-  spec.email       = %w[maciej@coditsu.io]
+  spec.email       = %w[maciej@mensfeld.pl]
   spec.homepage    = 'https://github.com/karafka/capistrano-karafka'
   spec.summary     = 'Karafka integration for Capistrano'
   spec.description = 'Karafka integration for Capistrano'
