@@ -18,7 +18,7 @@ GEM
       sshkit (>= 1.9.0)
     capistrano-bundler (2.0.1)
       capistrano (~> 3.1)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     delivery_boy (1.0.1)
       king_konf (~> 0.3)
       ruby-kafka (~> 1.0)
@@ -99,7 +99,7 @@ GEM
     rake (13.0.1)
     reline (0.1.4)
       io-console (~> 0.5)
-    ruby-kafka (1.1.0)
+    ruby-kafka (1.2.0)
       digest-crc
     sshkit (1.21.0)
       net-scp (>= 1.1.2)
