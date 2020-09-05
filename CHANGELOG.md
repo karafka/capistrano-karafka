@@ -1,6 +1,6 @@
 # Capistrano Karafka changelog
 
-## 1.4.0.rc1 (unreleased)
+## 1.4.0 (2020-09-05)
 - 1.4 release without any changes to match Karafka releases versioning
 
 ## 1.3.1 (2020-04-28)

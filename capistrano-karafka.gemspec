@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'capistrano-karafka'
-  spec.version     = '1.3.1'
+  spec.version     = '1.4.0'
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
   spec.email       = %w[maciej@mensfeld.pl]
