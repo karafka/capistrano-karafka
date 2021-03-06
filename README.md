@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/karafka/capistrano-karafka/workflows/ci/badge.svg)](https://github.com/karafka/capistrano-karafka/actions?query=workflow%3Aci)
 [![Gem Version](https://badge.fury.io/rb/capistrano-karafka.svg)](http://badge.fury.io/rb/capistrano-karafka)
-[![Join the chat at https://gitter.im/karafka/karafka](https://badges.gitter.im/karafka/karafka.svg)](https://gitter.im/karafka/karafka?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/karafka/karafka](https://badges.gitter.im/karafka/karafka.svg)](https://gitter.im/karafka/karafka)
 
 Karafka integration for Capistrano.
 
@@ -106,5 +106,3 @@ Each pull request must pass all the RSpec specs and meet our quality requirement
 To check if everything is as it should be, we use [Coditsu](https://coditsu.io) that combines multiple linters and code analyzers for both code and documentation. Once you're done with your changes, submit a pull request.
 
 Coditsu will automatically check your work against our quality standards. You can find your commit check results on the [builds page](https://app.coditsu.io/karafka/repositories/capistrano-karafka/builds/commit_builds) of Capistrano Karafka repository.
-
-[![coditsu](https://coditsu.io/assets/quality_bar.svg)](https://app.coditsu.io/karafka/repositories/capistrano-karafka/builds/commit_builds)
