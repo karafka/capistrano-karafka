@@ -11,7 +11,7 @@ GEM
   specs:
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
-    capistrano (3.15.0)
+    capistrano (3.16.0)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -109,11 +109,10 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  ruby
-  x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   capistrano-karafka!
 
 BUNDLED WITH
-   2.2.11
+   2.2.13
