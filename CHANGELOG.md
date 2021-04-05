@@ -1,5 +1,8 @@
 # Capistrano Karafka changelog
 
+## Unreleased
+- Remove Ruby 2.5 support and update minimum Ruby requirement to 2.6
+
 ## 1.4.0 (2020-09-05)
 - 1.4 release without any changes to match Karafka releases versioning
 
