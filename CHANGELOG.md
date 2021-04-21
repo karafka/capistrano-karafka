@@ -1,6 +1,7 @@
 # Capistrano Karafka changelog
 
-## Unreleased
+## 1.4.1 (2021-04-21)
+- Re-license with MIT
 - Remove Ruby 2.5 support and update minimum Ruby requirement to 2.6
 
 ## 1.4.0 (2020-09-05)
