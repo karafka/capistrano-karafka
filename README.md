@@ -1,12 +1,16 @@
 # Capistrano Karafka
 
-[![Build Status](https://github.com/karafka/capistrano-karafka/workflows/ci/badge.svg)](https://github.com/karafka/capistrano-karafka/actions?query=workflow%3Aci)
-[![Gem Version](https://badge.fury.io/rb/capistrano-karafka.svg)](http://badge.fury.io/rb/capistrano-karafka)
-[![Join the chat at https://slack.karafka.io](https://raw.githubusercontent.com/karafka/misc/master/slack.svg)](https://slack.karafka.io)
+## Deprecation notice
 
-Karafka integration for Capistrano.
+This package has been deprecated. It will not work with Karafka `2.0` or newer.
 
-**Note**: If you want to use Karafka framework with `systemd` and Capistrano, you don't need this gem at all. Please refer to [this](https://github.com/karafka/karafka/wiki/Deployment#systemd--capistrano) section of the Wiki.
+There's a great explanation done by Mike Perham that I want to quote:
+
+> I've noted for years how modern services should be managed with a proper init system. Managing services manually is more error-prone, let your operating system do it for you. systemd, upstart, and foreman are three options. See the Deployment wiki page for the latest details.
+
+[Here](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/) you can find more extensive explanation on the reasoning behind this decision.
+
+Please refer to [this](https://github.com/karafka/karafka/wiki/Deployment#systemd--capistrano) section of the Karafka Wiki for an explanation on how to use `systemd` with Karafka.
 
 ## Installation
 
