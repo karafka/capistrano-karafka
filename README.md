@@ -1,12 +1,16 @@
 # Capistrano Karafka
 
-[![Build Status](https://github.com/karafka/capistrano-karafka/workflows/ci/badge.svg)](https://github.com/karafka/capistrano-karafka/actions?query=workflow%3Aci)
-[![Gem Version](https://badge.fury.io/rb/capistrano-karafka.svg)](http://badge.fury.io/rb/capistrano-karafka)
-[![Join the chat at https://gitter.im/karafka/karafka](https://badges.gitter.im/karafka/karafka.svg)](https://gitter.im/karafka/karafka)
+## Deprecation notice
 
-Karafka integration for Capistrano.
+This package has been deprecated. It will not work with Karafka `2.0` or newer.
 
-**Note**: If you want to use Karafka framework with `systemd` and Capistrano, you don't need this gem at all. Please refer to [this](https://github.com/karafka/karafka/wiki/Deployment#systemd--capistrano) section of the Wiki.
+There's a great explanation done by Mike Perham that I want to quote:
+
+> I've noted for years how modern services should be managed with a proper init system. Managing services manually is more error-prone, let your operating system do it for you. systemd, upstart, and foreman are three options. See the Deployment wiki page for the latest details.
+
+[Here](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/) you can find more extensive explanation on the reasoning behind this decision.
+
+Please refer to [this](https://github.com/karafka/karafka/wiki/Deployment#systemd--capistrano) section of the Karafka Wiki for an explanation on how to use `systemd` with Karafka.
 
 ## Installation
 
@@ -99,10 +103,8 @@ By default, capistrano-karafka will start Karafka processes without limiting con
 
 ## Note on contributions
 
-First, thank you for considering contributing to Capistrano Karafka! It's people like you that make the open source community such a great community!
+First, thank you for considering contributing to the Karafka ecosystem! It's people like you that make the open source community such a great community!
 
-Each pull request must pass all the RSpec specs and meet our quality requirements.
+Each pull request must pass all the RSpec specs, integration tests and meet our quality requirements.
 
-To check if everything is as it should be, we use [Coditsu](https://coditsu.io) that combines multiple linters and code analyzers for both code and documentation. Once you're done with your changes, submit a pull request.
-
-Coditsu will automatically check your work against our quality standards. You can find your commit check results on the [builds page](https://app.coditsu.io/karafka/repositories/capistrano-karafka/builds/commit_builds) of Capistrano Karafka repository.
+Fork it, update and wait for the Github Actions results.
