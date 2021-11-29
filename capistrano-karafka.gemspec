@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
   spec.email       = %w[maciej@mensfeld.pl]
-  spec.homepage    = 'https://github.com/karafka/capistrano-karafka'
+  spec.homepage    = 'https://karafka.io'
   spec.summary     = 'Karafka integration for Capistrano'
   spec.description = 'Karafka integration for Capistrano'
   spec.license     = 'MIT'
