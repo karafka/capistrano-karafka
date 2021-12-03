@@ -1,5 +1,9 @@
 # Capistrano Karafka changelog
 
+## 1.4.3 (2021-12-03)
+- Source code metadata url added to the gemspec
+- Fixed MIT-LICENSE content
+
 ## 1.4.2 (2021-11-29)
 - Update homepage and source code reference
 - Fix the license content
