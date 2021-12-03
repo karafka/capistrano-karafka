@@ -1,5 +1,9 @@
 # Capistrano Karafka changelog
 
+## 1.4.2 (2021-11-29)
+- Update homepage and source code reference
+- Fix the license content
+
 ## 1.4.1 (2021-04-21)
 - Re-license with MIT
 - Remove Ruby 2.5 support and update minimum Ruby requirement to 2.6

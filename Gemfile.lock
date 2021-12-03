@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    capistrano-karafka (1.4.1)
+    capistrano-karafka (1.4.2)
       capistrano (>= 3.9)
       capistrano-bundler (>= 1.2)
       karafka (~> 1.4.0)
@@ -104,11 +104,10 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
-  x86_64-darwin
   x86_64-linux
 
 DEPENDENCIES
   capistrano-karafka!
 
 BUNDLED WITH
-   2.2.31
+   2.2.32
