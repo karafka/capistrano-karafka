@@ -1,5 +1,8 @@
 # Capistrano Karafka changelog
 
+## Unreleased
+- Add support for Ruby 3.1
+
 ## 1.4.3 (2021-12-03)
 - Source code metadata url added to the gemspec
 - Fixed MIT-LICENSE content
