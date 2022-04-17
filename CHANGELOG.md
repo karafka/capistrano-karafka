@@ -1,7 +1,8 @@
 # Capistrano Karafka changelog
 
-## Unreleased
+## 1.4.4 (2022-04-17)
 - Add support for Ruby 3.1
+- Add `rubygems_mfa_required`
 
 ## 1.4.3 (2021-12-03)
 - Source code metadata url added to the gemspec
