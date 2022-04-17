@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'capistrano-karafka'
-  spec.version     = '1.4.2'
+  spec.version     = '1.4.4'
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
   spec.email       = %w[maciej@mensfeld.pl]
@@ -28,5 +28,9 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
-  spec.metadata      = { 'source_code_uri' => 'https://github.com/karafka/capistrano-karafka' }
+
+  spec.metadata = {
+    'source_code_uri' => 'https://github.com/karafka/capistrano-karafka',
+    'rubygems_mfa_required' => 'true'
+  }
 end

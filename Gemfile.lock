@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    capistrano-karafka (1.4.2)
+    capistrano-karafka (1.4.4)
       capistrano (>= 3.9)
       capistrano-bundler (>= 1.2)
       karafka (~> 1.4.0)
@@ -63,7 +63,7 @@ GEM
       dry-core (~> 0.5, >= 0.5)
       dry-initializer (~> 3.0)
       dry-schema (~> 1.9, >= 1.9.1)
-    envlogic (1.1.4)
+    envlogic (1.1.5)
       dry-inflector (~> 0.1)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
